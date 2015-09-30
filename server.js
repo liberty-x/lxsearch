@@ -6,4 +6,6 @@ console.log("Server running at http://localhost:" + port);
 function handler(req, res) {
       res.writeHead(200, {"Content-Type": "text/html"});
       res.end("hello");
-};
+}
+
+module.exports = handler;
