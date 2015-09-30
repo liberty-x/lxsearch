@@ -1,3 +1,5 @@
+
+
 ## LX Search
 
 ## Who?
@@ -36,10 +38,8 @@ We will be using the following packages to test our code continuously.
 
 ### WordNik API
 
-### Wireframes 
+### Wireframes
 
 #### Tasking
 
 We will be using trello to track our tasks over the next couple of days. Do follow us [here](https://trello.com/b/TDofqyUx/auto-complete).
-
-
