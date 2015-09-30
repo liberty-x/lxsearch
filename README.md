@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/liberty-x/lxsearch.svg)](https://travis-ci.org/liberty-x/lxsearch)
+
 
 ## LX Search
 
