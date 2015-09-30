@@ -11,19 +11,19 @@ We will aim to build a dictionary website that searches for the definition of a 
 
 ## Why?
 
-Because who uses an 'Oxford Dictionary' anymore.
+Because who uses an 'Oxford Dictionary' anymore?
 
 ### Functionality
 
 User input search term will display the definition of that word on the same page.
 A new search will return the new results while deleting the old results.
 
-### Dependancies
+### Dependencies
  * [Wordnik API](http://developer.wordnik.com/)
  * [Node.js](https://nodejs.org/en/)
  * [Heroku](https://www.heroku.com/)
 
-### Dev Dependancies
+### Dev Dependencies
  * [Pre-Commit](https://github.com/jish/pre-commit)
  * [env2](https://github.com/dwyl/env2)
 
