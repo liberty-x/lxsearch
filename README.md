@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/liberty-x/lxsearch.svg?branch=master)](https://travis-ci.org/liberty-x/lxsearch)
+
 ## LX Search
 
 ## Who?
@@ -18,7 +20,7 @@ Because who uses an 'Oxford Dictionary' anymore?
 User input search term will display the definition of that word on the same page.
 A new search will return the new results while deleting the old results.
 
-### Dependencies
+### Dependencies 
  * [Wordnik API](http://developer.wordnik.com/)
  * [Node.js](https://nodejs.org/en/)
  * [Heroku](https://www.heroku.com/)
@@ -36,10 +38,8 @@ We will be using the following packages to test our code continuously.
 
 ### WordNik API
 
-### Wireframes 
+### Wireframes
 
 #### Tasking
 
 We will be using trello to track our tasks over the next couple of days. Do follow us [here](https://trello.com/b/TDofqyUx/auto-complete).
-
-
