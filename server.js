@@ -1,11 +1,19 @@
-var http = require('http');
-var port = 8000;
-var server = http.createServer(handler);
-server.listen(port);
-console.log("Server running at http://localhost:" + port);
-function handler(req, res) {
-      res.writeHead(200, {"Content-Type": "text/html"});
-      res.end("hello");
-}
+var serve = (function(){
+  var http = require('http');
+  var port = 8000;
+  console.log("Server running at http://localhost:" + port);
+  function handler(req, res) {
+    res.writeHead(200, {"Content-Type": "text/html"});
+    res.end("hello");
+  }
+  var create = function(){
+    var server = http.createServer(handler);
+    server.listen(port);
+  };
+  return {
+    handler: handler,
+    create: create
+  };
+}());
 
-module.exports = handler;
+module.exports = serve;
