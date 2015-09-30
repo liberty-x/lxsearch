@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/liberty-x/lxsearch.svg?branch=master)](https://travis-ci.org/liberty-x/lxsearch)
 [![Code Climate](https://codeclimate.com/github/liberty-x/lxsearch/badges/gpa.svg)](https://codeclimate.com/github/liberty-x/lxsearch)
+[![Test Coverage](https://codeclimate.com/github/liberty-x/lxsearch/badges/coverage.svg)](https://codeclimate.com/github/liberty-x/lxsearch/coverage)
 
 ## LX Search
 
