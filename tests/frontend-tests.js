@@ -18,8 +18,3 @@ test("checking enter works to input word in search bar",function(assert){
     done();
   }, 2000);
 });
-
-//
-// if (e.keycode === 13) {
-//   return 'cat';
-// }
