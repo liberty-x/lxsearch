@@ -11,7 +11,7 @@ test("checking enter works to input word in search bar",function(assert){
   var done = assert.async();
   setTimeout (function(){
     var result = (function pressEnter(e) {
-      return word
+      return word;
     }(evt.initKeyboardEvent(13)));
     var expected = word;
     assert.equal(result, expected,"Key down is working");
