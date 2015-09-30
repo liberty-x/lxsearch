@@ -22,7 +22,10 @@ A new search will return the new results while deleting the old results.
  * [Wordnik API](http://developer.wordnik.com/)
  * [Node.js](https://nodejs.org/en/)
  * [Heroku](https://www.heroku.com/)
- * [Pre-Commit Hooks](https://github.com/jish/pre-commit)
+
+### Dev Dependancies
+ * [Pre-Commit](https://github.com/jish/pre-commit)
+ * [env2](https://github.com/dwyl/env2)
 
 ### Testing
 
