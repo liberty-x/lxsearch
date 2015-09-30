@@ -4,7 +4,7 @@
   "description": "",
   "main": "backend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/tape ./tests/backend-test.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/liberty-x/lxsearch#readme",
   "devDependencies": {
-    "pre-commit": "^1.1.1"
+    "pre-commit": "^1.1.1",
+    "shot": "^1.6.1",
+    "tape": "^4.2.0"
   },
   "pre-commit": [
-    
+    "test"
   ]
 }
