@@ -18,8 +18,12 @@
   "homepage": "https://github.com/liberty-x/lxsearch#readme",
   "devDependencies": {
     "pre-commit": "^1.1.1",
+    "request": "^2.64.0",
     "shot": "^1.6.1",
     "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "env2": "^2.0.2"
   },
   "pre-commit": [
     "test"
