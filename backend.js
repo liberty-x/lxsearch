@@ -1,4 +1,4 @@
-var wordSearch = 'house'
+var wordSearch = 'house';
 var request = require('request');
 var env = require('env2')('./config.env');
 // var exports = module.exports
