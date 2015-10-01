@@ -4,6 +4,7 @@
   "description": "",
   "main": "backend.js",
   "scripts": {
+    "start": "node index.js",
     "test": "./node_modules/.bin/tape ./tests/backend-test.js",
     "coverage": "istanbul cover ./node_modules/.bin/tape ./tests/backend-test.js",
     "codeclimate": "CODECLIMATE_REPO_TOKEN=e517b9de7a17ec5792b48e61caa60d6140ac27af172f07f693118e71f49fd6db codeclimate-test-reporter < ./coverage/lcov.info"
@@ -29,8 +30,15 @@
     "env2": "^2.0.2",
     "request": "^2.64.0"
   },
-  "pre-commit": [
-    "test",
-    "coverage"
-  ]
-}
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liberty-x/lxsearch"
+  },
+    "pre-commit": [
+      "test",
+      "coverage"
+    ]
+  }
