@@ -5,9 +5,8 @@ var serve = (function(){
   var port = 8000;
   console.log("Server running at http://localhost:" + port);
   function handler(req, res) {
-    //console.log(res);
     res.writeHead(200, {"Content-Type": "text/html"});
-    res.end();
+    res.end("hi");
   }
   var create = function(){
     var server = http.createServer(handler);
