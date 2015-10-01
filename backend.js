@@ -1,4 +1,3 @@
-    //var word = 'house'//, function needed for dynamic search
     var request = require('request');
     var env = require('env2')('./config.env');
 
@@ -10,7 +9,6 @@
         } else if (!error && response.statusCode == 200) {
         var jsonObject = JSON.parse(array);
         callback(jsonObject[0].text);
-        //console.log(jsonObject[0].text);
       }
     });
   };

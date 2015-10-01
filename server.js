@@ -1,4 +1,4 @@
-var apiReq = require('./backend.js');
+var definition = require('./backend.js');
 
 var serve = (function(){
   var http = require('http');
@@ -26,8 +26,8 @@ var serve = (function(){
   function wordDefintion (req, res) {
     res.writeHead(200, {"Content-Type": "text/html"});
     var word = extractWord(req.url);
-    apiReq(word, function(definition) {
-      res.end(defintion);
+    definition(word, function(def) {
+      res.end(def);
     });
   };
 
