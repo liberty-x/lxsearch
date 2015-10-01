@@ -1,4 +1,4 @@
-var backend = require('./backend.js');
+var definition = require('./backend.js');
 
 var serve = (function(){
   var http = require('http');
@@ -7,7 +7,7 @@ var serve = (function(){
   function handler(req, res) {
     //console.log(res);
     res.writeHead(200, {"Content-Type": "text/html"});
-    res.end("Ruth");
+    res.end();
   }
   var create = function(){
     var server = http.createServer(handler);

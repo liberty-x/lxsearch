@@ -1,7 +1,9 @@
 var test = require('tape');
 var server = require('../server.js');
 var shot = require('shot');
-var backend = require('../backend.js');
+var definition = require('../backend.js');
+
+
 
 test("check server is running", function(t){
   shot.inject(server.handler, {method:'GET', url: '/'}, function(res){
@@ -10,14 +12,11 @@ test("check server is running", function(t){
   });
 });
 
-// test("Is the word of the day returned", function(t){
-//   var request = {
-//     method: "GET",
-//     url: '/'
-//   }
-//   shot.inject(server.handler, request, function(res){
-//   //  console.log(res);
-//     t.equal(res.payload, backend.wordOfTheDay, "passed!");
-//     t.end();
-//   })
-// })
+
+test("Is the definition of the word house returned", function(t){
+var expected = "A structure serving as a dwelling for one or more persons, especially for a family."
+  definition("house", function (data) {
+    t.equal(data, expected, "success!");
+    t.end();
+  })
+})
