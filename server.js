@@ -10,17 +10,35 @@ var serve = (function(){
 
   function handler(req, res) {
     var url = req.url;
+    console.log(url);
     if (url === '/') {
       res.writeHead(200, {"Content-Type": "text/html"});
       res.end(index.toString());
+    } else if (url.indexOf('.') > -1) {
+      var ext = url.split('.')[1];
+      res.writeHead(200, {'Content-Type': 'text/' + ext})
+      res.end(fs.readFileSync(__dirname + url));
     } else if (url.length > 1) {
       wordDefintion(req, res);
-    }
-  }
+    };
+  };
 
   function extractWord (str) {
     return str.split('/')[1];
-  }
+  };
+
+  // fs.readFile(__dirname + request.url, function(err, file) {
+  //   if (err) {
+  //     response.end();
+  //   } else {
+  //     var ext = request.url.split('.')[1];
+  //     response.writeHead(200, {'Content-Type': 'text/' + ext});
+  //   }
+  //   response.end(file);
+  // })
+
+
+
 
   function wordDefintion (req, res) {
     res.writeHead(200, {"Content-Type": "text/html"});
@@ -28,7 +46,7 @@ var serve = (function(){
     definition(word, function(def) {
       res.end(def);
     });
-  }
+  };
 
   var create = function(){
     var server = http.createServer(handler);
