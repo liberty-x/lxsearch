@@ -7,8 +7,9 @@ var serve = (function(){
   var index = fs.readFileSync(__dirname + '/index.html');
   console.log("Server running at http://localhost:" + port);
   function handler(req, res) {
+    console.log(req);
     res.writeHead(200, {"Content-Type": "text/html"});
-    res.end(index);
+    res.end(index.toString());
   }
   var create = function(){
     var server = http.createServer(handler);
