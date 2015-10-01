@@ -1,7 +1,6 @@
 function searchBarValue(){
   var userInput = document.getElementById('searchBar').value;
-  if (userInput.length > 3){
-    console.log(userInput);
+  if (userInput.length > 2){
     sendInputToServer(userInput);
   }
 }
