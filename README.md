@@ -23,7 +23,7 @@ Because who uses an 'Oxford Dictionary' anymore?
 User input search term will display the definition of that word on the same page.
 A new search will return the new results while deleting the old results.
 
-### Dependencies 
+### Dependencies
  * [Wordnik API](http://developer.wordnik.com/)
  * [Node.js](https://nodejs.org/en/)
  * [Heroku](https://www.heroku.com/)
