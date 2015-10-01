@@ -10,18 +10,17 @@ var serve = (function(){
 
   function handler(req, res) {
     var url = req.url;
-    console.log(url);
     if (url === '/') {
       res.writeHead(200, {"Content-Type": "text/html"});
       res.end(index.toString());
     } else if (url.length > 1) {
       wordDefintion(req, res);
-    };
-  };
+    }
+  }
 
   function extractWord (str) {
     return str.split('/')[1];
-  };
+  }
 
   function wordDefintion (req, res) {
     res.writeHead(200, {"Content-Type": "text/html"});
@@ -29,7 +28,7 @@ var serve = (function(){
     definition(word, function(def) {
       res.end(def);
     });
-  };
+  }
 
   var create = function(){
     var server = http.createServer(handler);
