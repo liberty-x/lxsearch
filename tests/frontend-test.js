@@ -8,13 +8,15 @@ test("checking search bar value", function (assert){
 });
 
 test("checking enter works to input word in search bar",function(assert){
-  var done = assert.async();
-  setTimeout (function(){
+  // var done = assert.async();
+  // setTimeout (function(){
     var result = (function pressEnter(e) {
       return word;
     }(evt.initKeyboardEvent(13)));
     var expected = word;
     assert.equal(result, expected,"Key down is working");
-    done();
-  }, 2000);
+  //   done();
+  // }, 2000);
 });
+
+// elem.addEventListener('click', syncFunction);
