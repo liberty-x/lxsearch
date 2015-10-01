@@ -10,7 +10,7 @@ function sendInputToServer(userInput){
   out.onreadystatechange = function(){
     if (out.readyState === 4 && out.status === 200){
       console.log(out.responseText);
-      // document.getElementsByClassName('results').innerHTML = out.responseText;
+      document.getElementById('results').innerHTML = out.responseText;
     }
   };
   out.open('GET', '/' + userInput);
@@ -18,5 +18,7 @@ function sendInputToServer(userInput){
 }
 
 document.getElementById('searchBar').addEventListener("keyup",function(e){
-  searchBarValue();
+  if (e.keyCode === 13) {
+    searchBarValue();
+  }
 });
