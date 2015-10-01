@@ -27,19 +27,6 @@ var serve = (function(){
     return str.split('/')[1];
   };
 
-  // fs.readFile(__dirname + request.url, function(err, file) {
-  //   if (err) {
-  //     response.end();
-  //   } else {
-  //     var ext = request.url.split('.')[1];
-  //     response.writeHead(200, {'Content-Type': 'text/' + ext});
-  //   }
-  //   response.end(file);
-  // })
-
-
-
-
   function wordDefintion (req, res) {
     res.writeHead(200, {"Content-Type": "text/html"});
     var word = extractWord(req.url);
