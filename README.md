@@ -5,6 +5,8 @@
 
 ## LX Search
 
+Visit our app here: https://safe-everglades-1090.herokuapp.com/
+
 ## Who?
 
 Liberty-X, a project team in the 6th iteration of the Founders & Coders academy.
