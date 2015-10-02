@@ -5,7 +5,7 @@
 
 ## LX Search
 
-Visit our app here: [https://safe-everglades-1090.herokuapp.com/]
+Visit our app here: https://safe-everglades-1090.herokuapp.com/
 
 ## Who?
 
