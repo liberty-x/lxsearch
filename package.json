@@ -7,7 +7,8 @@
     "start": "node index.js",
     "test": "./node_modules/.bin/tape ./tests/backend-test.js",
     "coverage": "istanbul cover ./node_modules/.bin/tape ./tests/backend-test.js",
-    "codeclimate": "CODECLIMATE_REPO_TOKEN=e517b9de7a17ec5792b48e61caa60d6140ac27af172f07f693118e71f49fd6db codeclimate-test-reporter < ./coverage/lcov.info"
+    "codeclimate": "CODECLIMATE_REPO_TOKEN=e517b9de7a17ec5792b48e61caa60d6140ac27af172f07f693118e71f49fd6db codeclimate-test-reporter < ./coverage/lcov.info",
+    "jshint": "jshint -c .jshintrc --exclude-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "url": "https://github.com/liberty-x/lxsearch"
   },
     "pre-commit": [
+      "jshint",
       "test",
       "coverage"
     ]

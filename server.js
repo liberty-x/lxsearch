@@ -16,16 +16,16 @@ var serve = (function(){
       res.end(index.toString());
     } else if (url.indexOf('.') > -1) {
       var ext = url.split('.')[1];
-      res.writeHead(200, {'Content-Type': 'text/' + ext})
+      res.writeHead(200, {'Content-Type': 'text/' + ext});
       res.end(fs.readFileSync(__dirname + url));
     } else if (url.length > 1) {
       wordDefintion(req, res);
-    };
-  };
+    }
+  }
 
   function extractWord (str) {
     return str.split('/')[1];
-  };
+  }
 
   function wordDefintion (req, res) {
     res.writeHead(200, {"Content-Type": "text/html"});
@@ -33,7 +33,7 @@ var serve = (function(){
     definition(word, function(def) {
       res.end(def);
     });
-  };
+  }
 
   var create = function(){
     var server = http.createServer(handler);

@@ -6,7 +6,7 @@
         if (error) {
             alert('Sorry, there was an error!');
             // send an error to front end
-        } else if (!error && response.statusCode == 200) {
+        } else if (!error && response.statusCode === 200) {
         var jsonObject = JSON.parse(array);
         callback(jsonObject[0].text);
       }
