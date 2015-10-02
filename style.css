@@ -36,7 +36,9 @@ body:after {
     height: 100%;
     opacity : 0.4;
     z-index: -1;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
 h1 {

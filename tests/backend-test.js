@@ -18,6 +18,6 @@ var expected = "A structure serving as a dwelling for one or more persons, espec
   definition("house", function (data) {
     console.log(data);
     t.equal(data, expected, "success!");
+    t.end();
   })
-  t.end();
 })
