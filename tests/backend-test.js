@@ -19,5 +19,5 @@ var expected = "A structure serving as a dwelling for one or more persons, espec
     console.log(data);
     t.equal(data, expected, "success!");
   })
-  t.end();
+    t.end();
 })
