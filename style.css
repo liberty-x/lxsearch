@@ -36,6 +36,10 @@ body:after {
     height: 100%;
     opacity : 0.4;
     z-index: -1;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 74cc981b2c2212926014d201db246b9d46241ae0
 }
 
 h1 {
