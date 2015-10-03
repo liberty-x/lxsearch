@@ -27,17 +27,11 @@ html, body {
 }
 
 body{
-    /*content : "";*/
-    /*position: absolute;
-    top: 0;
-    left: 0;*/
     background: url(https://files.gitter.im/RachelBLondon/libert-x/ojlY/background-image-lightened-02-01.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*opacity : 0.1;
-    z-index: -1;*/
 }
 
 h1 {
